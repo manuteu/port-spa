@@ -10,7 +10,7 @@ const projects = [
     tags: ["React", "TypeScript", "Tailwind"],
     github: "#",
     live: "#",
-    gradient: "from-[#00ffff] to-[#0088ff]",
+    gradient: "from-brand-cyan to-[#0088ff]",
   },
   {
     title: "Dashboard Analytics",
@@ -20,7 +20,7 @@ const projects = [
     tags: ["Next.js", "Chart.js", "API"],
     github: "#",
     live: "#",
-    gradient: "from-[#ff00ff] to-[#ff0088]",
+    gradient: "from-brand-magenta to-[#ff0088]",
   },
   {
     title: "App de Tarefas",
@@ -60,13 +60,13 @@ const projects = [
     tags: ["Next.js", "Framer", "SEO"],
     github: "#",
     live: "#",
-    gradient: "from-[#00ffff] to-[#ff00ff]",
+    gradient: "from-brand-cyan to-brand-magenta",
   },
 ];
 
 export function Projects() {
   return (
-    <section id="projetos" className="py-24 px-6 bg-[#0a0a0f]">
+    <section id="projetos" className="py-24 px-6 bg-background">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ export function Projects() {
           className="text-center mb-16"
         >
           <h2
-            className="mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#00ffff] to-[#ff00ff]"
+            className="mb-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-magenta"
             style={{ fontSize: "3rem", fontWeight: 700 }}
           >
             Projetos
@@ -95,7 +95,7 @@ export function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -10 }}
-              className="group relative bg-card border border-border rounded-xl overflow-hidden hover:border-[#00ffff]/50 transition-all duration-300"
+              className="group relative bg-card border border-border rounded-xl overflow-hidden hover:border-brand-cyan/50 transition-all duration-300"
             >
               <div className="relative h-48 overflow-hidden">
                 <div
@@ -118,7 +118,7 @@ export function Projects() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 text-sm bg-[#00ffff]/10 border border-[#00ffff]/20 rounded-full text-[#00ffff]"
+                      className="px-3 py-1 text-sm bg-brand-cyan/10 border border-brand-cyan/20 rounded-full text-brand-cyan"
                     >
                       {tag}
                     </span>
@@ -128,14 +128,14 @@ export function Projects() {
                 <div className="flex gap-3">
                   <a
                     href={project.github}
-                    className="flex items-center gap-2 px-4 py-2 border border-[#00ffff]/30 rounded-lg hover:bg-[#00ffff]/10 hover:border-[#00ffff] transition-all duration-300"
+                    className="flex items-center gap-2 px-4 py-2 border border-brand-cyan/30 rounded-lg hover:bg-brand-cyan/10 hover:border-brand-cyan transition-all duration-300"
                   >
                     <Github className="w-4 h-4" />
                     <span className="text-sm">Código</span>
                   </a>
                   <a
                     href={project.live}
-                    className="flex items-center gap-2 px-4 py-2 bg-[#00ffff] text-[#0a0a0f] rounded-lg hover:shadow-[0_0_20px_rgba(0,255,255,0.4)] transition-all duration-300"
+                    className="flex items-center gap-2 px-4 py-2 bg-brand-cyan text-primary-foreground rounded-lg hover:shadow-[0_0_20px_color-mix(in_srgb,var(--brand-cyan)_40%,transparent)] transition-all duration-300"
                   >
                     <ExternalLink className="w-4 h-4" />
                     <span className="text-sm" style={{ fontWeight: 600 }}>

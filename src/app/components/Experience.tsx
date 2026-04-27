@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "motion/react";
 import { Briefcase, Calendar } from "lucide-react";
 
@@ -17,7 +16,7 @@ const experiences = [
       "Colaboração com times multidisciplinares (produto, design e backend) para entrega de soluções alinhadas ao negócio",
       "Otimização de performance e correção de gargalos em fluxos importantes da aplicação",
     ],
-    color: "#00ffff",
+    color: "var(--brand-cyan)",
   },
   {
     company: "Moneycloud",
@@ -32,7 +31,7 @@ const experiences = [
       "Participação no desenvolvimento de funcionalidades para aplicações mobile com React Native e Cordova",
       "Colaboração com o time na implementação de boas práticas de desenvolvimento front-end",
     ],
-    color: "#ff00ff",
+    color: "var(--brand-magenta)",
   },
   {
     company: "Freelance",
@@ -63,7 +62,7 @@ export function Experience() {
           className="text-center mb-16"
         >
           <h2
-            className="mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#00ffff] to-[#ff00ff]"
+            className="mb-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-magenta"
             style={{ fontSize: "3rem", fontWeight: 700 }}
           >
             Experiência
@@ -74,7 +73,7 @@ export function Experience() {
         </motion.div>
 
         <div className="max-w-4xl mx-auto relative">
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#00ffff] via-[#ff00ff] to-[#00ff88]"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-cyan via-brand-magenta to-[#00ff88]"></div>
 
           {experiences.map((exp, index) => (
             <motion.div
@@ -92,20 +91,20 @@ export function Experience() {
                 transition={{ type: "spring", stiffness: 400 }}
               />
 
-              <div className="bg-card border border-border rounded-xl p-6 hover:border-[#00ffff]/50 transition-all duration-300 group">
+              <div className="bg-card border border-border rounded-xl p-6 hover:border-brand-cyan/50 transition-all duration-300 group">
                 <div className="flex flex-wrap gap-4 justify-between items-start mb-4">
                   <div>
                     <h3 style={{ fontSize: "1.5rem", fontWeight: 600 }} className="mb-1">
                       {exp.position}
                     </h3>
-                    <div className="flex items-center gap-2 text-[#00ffff]">
+                    <div className="flex items-center gap-2 text-brand-cyan">
                       <Briefcase className="w-4 h-4" />
                       <span style={{ fontWeight: 500 }}>{exp.company}</span>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 px-4 py-2 bg-[#00ffff]/10 border border-[#00ffff]/20 rounded-lg">
-                    <Calendar className="w-4 h-4 text-[#00ffff]" />
-                    <span className="text-[#00ffff]" style={{ fontWeight: 500 }}>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-brand-cyan/10 border border-brand-cyan/20 rounded-lg">
+                    <Calendar className="w-4 h-4 text-brand-cyan" />
+                    <span className="text-brand-cyan" style={{ fontWeight: 500 }}>
                       {exp.period}
                     </span>
                   </div>

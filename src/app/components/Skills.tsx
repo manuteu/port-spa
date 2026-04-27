@@ -6,13 +6,13 @@ const skills = [
     icon: Code2,
     title: "Desenvolvimento Front-End",
     description: "React, TypeScript, Next.js, Vue.js",
-    color: "#00ffff",
+    color: "var(--brand-cyan)",
   },
   {
     icon: Palette,
     title: "Design & UI/UX",
     description: "Figma, Tailwind CSS, Styled Components",
-    color: "#ff00ff",
+    color: "var(--brand-magenta)",
   },
   {
     icon: Smartphone,
@@ -56,7 +56,7 @@ export function Skills() {
           className="text-center mb-16"
         >
           <h2
-            className="mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#00ffff] to-[#ff00ff]"
+            className="mb-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-magenta"
             style={{ fontSize: "3rem", fontWeight: 700 }}
           >
             Habilidades
@@ -75,21 +75,19 @@ export function Skills() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-card border border-border rounded-xl p-6 hover:border-[#00ffff]/50 transition-all duration-300 group"
-              style={{
-                boxShadow: `0 0 0 rgba(${skill.color}, 0)`,
-              }}
+              className="bg-card border border-border rounded-xl p-6 hover:border-brand-cyan/50 transition-all duration-300 group"
+              style={{ boxShadow: "none" }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = `0 0 30px ${skill.color}40`;
+                e.currentTarget.style.boxShadow = `0 0 30px color-mix(in srgb, ${skill.color} 25%, transparent)`;
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = `0 0 0 rgba(${skill.color}, 0)`;
+                e.currentTarget.style.boxShadow = "none";
               }}
             >
               <div
                 className="w-14 h-14 rounded-lg flex items-center justify-center mb-4"
                 style={{
-                  background: `linear-gradient(135deg, ${skill.color}20, ${skill.color}05)`,
+                  background: `linear-gradient(135deg, color-mix(in srgb, ${skill.color} 12.5%, transparent), color-mix(in srgb, ${skill.color} 3%, transparent))`,
                 }}
               >
                 <skill.icon className="w-7 h-7" style={{ color: skill.color }} />
@@ -121,7 +119,7 @@ export function Skills() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 whileHover={{ scale: 1.1 }}
-                className="px-5 py-2 bg-[#00ffff]/10 border border-[#00ffff]/30 rounded-full text-[#00ffff] hover:bg-[#00ffff]/20 hover:shadow-[0_0_15px_rgba(0,255,255,0.3)] transition-all duration-300 cursor-default"
+                className="px-5 py-2 bg-brand-cyan/10 border border-brand-cyan/30 rounded-full text-brand-cyan hover:bg-brand-cyan/20 hover:shadow-[0_0_15px_color-mix(in_srgb,var(--brand-cyan)_30%,transparent)] transition-all duration-300 cursor-default"
                 style={{ fontWeight: 500 }}
               >
                 {tech}

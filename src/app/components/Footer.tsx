@@ -15,9 +15,9 @@ export function Footer() {
             <span className="text-muted-foreground">
               Desenvolvido com
             </span>
-            <Heart className="w-4 h-4 text-[#ff00ff] fill-[#ff00ff]" />
+            <Heart className="w-4 h-4 text-brand-magenta fill-brand-magenta" />
             <span className="text-muted-foreground">
-              por <span className="text-[#00ffff]" style={{ fontWeight: 600 }}>Você</span>
+              por <span className="text-brand-cyan" style={{ fontWeight: 600 }}>Você</span>
             </span>
           </motion.div>
 
@@ -31,7 +31,7 @@ export function Footer() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center border border-[#00ffff]/30 rounded-lg hover:border-[#00ffff] hover:bg-[#00ffff]/10 transition-all duration-300"
+              className="w-10 h-10 flex items-center justify-center border border-brand-cyan/30 rounded-lg hover:border-brand-cyan hover:bg-brand-cyan/10 transition-all duration-300"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -39,13 +39,13 @@ export function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center border border-[#00ffff]/30 rounded-lg hover:border-[#00ffff] hover:bg-[#00ffff]/10 transition-all duration-300"
+              className="w-10 h-10 flex items-center justify-center border border-brand-cyan/30 rounded-lg hover:border-brand-cyan hover:bg-brand-cyan/10 transition-all duration-300"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
               href="mailto:seu@email.com"
-              className="w-10 h-10 flex items-center justify-center border border-[#00ffff]/30 rounded-lg hover:border-[#00ffff] hover:bg-[#00ffff]/10 transition-all duration-300"
+              className="w-10 h-10 flex items-center justify-center border border-brand-cyan/30 rounded-lg hover:border-brand-cyan hover:bg-brand-cyan/10 transition-all duration-300"
             >
               <Mail className="w-5 h-5" />
             </a>

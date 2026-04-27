@@ -3,7 +3,7 @@ import { Mail, MapPin, Phone, Send } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contato" className="py-24 px-6 bg-[#0a0a0f]">
+    <section id="contato" className="py-24 px-6 bg-background">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -13,7 +13,7 @@ export function Contact() {
           className="text-center mb-16"
         >
           <h2
-            className="mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#00ffff] to-[#ff00ff]"
+            className="mb-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-magenta"
             style={{ fontSize: "3rem", fontWeight: 700 }}
           >
             Entre em Contato
@@ -37,10 +37,10 @@ export function Contact() {
             <div className="space-y-6">
               <motion.div
                 whileHover={{ x: 5 }}
-                className="flex items-start gap-4 p-4 bg-card border border-border rounded-lg hover:border-[#00ffff]/50 transition-all duration-300"
+                className="flex items-start gap-4 p-4 bg-card border border-border rounded-lg hover:border-brand-cyan/50 transition-all duration-300"
               >
-                <div className="w-12 h-12 flex items-center justify-center bg-[#00ffff]/10 border border-[#00ffff]/30 rounded-lg">
-                  <Mail className="w-6 h-6 text-[#00ffff]" />
+                <div className="w-12 h-12 flex items-center justify-center bg-brand-cyan/10 border border-brand-cyan/30 rounded-lg">
+                  <Mail className="w-6 h-6 text-brand-cyan" />
                 </div>
                 <div>
                   <h4 className="mb-1" style={{ fontWeight: 600 }}>
@@ -48,7 +48,7 @@ export function Contact() {
                   </h4>
                   <a
                     href="mailto:seu@email.com"
-                    className="text-muted-foreground hover:text-[#00ffff] transition-colors"
+                    className="text-muted-foreground hover:text-brand-cyan transition-colors"
                   >
                     seu@email.com
                   </a>
@@ -57,10 +57,10 @@ export function Contact() {
 
               <motion.div
                 whileHover={{ x: 5 }}
-                className="flex items-start gap-4 p-4 bg-card border border-border rounded-lg hover:border-[#00ffff]/50 transition-all duration-300"
+                className="flex items-start gap-4 p-4 bg-card border border-border rounded-lg hover:border-brand-cyan/50 transition-all duration-300"
               >
-                <div className="w-12 h-12 flex items-center justify-center bg-[#ff00ff]/10 border border-[#ff00ff]/30 rounded-lg">
-                  <Phone className="w-6 h-6 text-[#ff00ff]" />
+                <div className="w-12 h-12 flex items-center justify-center bg-brand-magenta/10 border border-brand-magenta/30 rounded-lg">
+                  <Phone className="w-6 h-6 text-brand-magenta" />
                 </div>
                 <div>
                   <h4 className="mb-1" style={{ fontWeight: 600 }}>
@@ -68,7 +68,7 @@ export function Contact() {
                   </h4>
                   <a
                     href="tel:+5511999999999"
-                    className="text-muted-foreground hover:text-[#ff00ff] transition-colors"
+                    className="text-muted-foreground hover:text-brand-magenta transition-colors"
                   >
                     +55 (11) 99999-9999
                   </a>
@@ -77,7 +77,7 @@ export function Contact() {
 
               <motion.div
                 whileHover={{ x: 5 }}
-                className="flex items-start gap-4 p-4 bg-card border border-border rounded-lg hover:border-[#00ffff]/50 transition-all duration-300"
+                className="flex items-start gap-4 p-4 bg-card border border-border rounded-lg hover:border-brand-cyan/50 transition-all duration-300"
               >
                 <div className="w-12 h-12 flex items-center justify-center bg-[#00ff88]/10 border border-[#00ff88]/30 rounded-lg">
                   <MapPin className="w-6 h-6 text-[#00ff88]" />
@@ -91,7 +91,7 @@ export function Contact() {
               </motion.div>
             </div>
 
-            <div className="mt-8 p-6 bg-gradient-to-br from-[#00ffff]/10 to-[#ff00ff]/10 border border-[#00ffff]/20 rounded-xl">
+            <div className="mt-8 p-6 bg-gradient-to-br from-brand-cyan/10 to-brand-magenta/10 border border-brand-cyan/20 rounded-xl">
               <p className="text-center text-muted-foreground">
                 Disponível para projetos freelance e oportunidades de emprego
               </p>
@@ -113,7 +113,7 @@ export function Contact() {
                   type="text"
                   id="name"
                   placeholder="Seu nome"
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-[#00ffff] focus:ring-2 focus:ring-[#00ffff]/20 transition-all duration-300"
+                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 transition-all duration-300"
                 />
               </div>
 
@@ -125,7 +125,7 @@ export function Contact() {
                   type="email"
                   id="email"
                   placeholder="seu@email.com"
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-[#00ffff] focus:ring-2 focus:ring-[#00ffff]/20 transition-all duration-300"
+                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 transition-all duration-300"
                 />
               </div>
 
@@ -137,7 +137,7 @@ export function Contact() {
                   type="text"
                   id="subject"
                   placeholder="Assunto da mensagem"
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-[#00ffff] focus:ring-2 focus:ring-[#00ffff]/20 transition-all duration-300"
+                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 transition-all duration-300"
                 />
               </div>
 
@@ -149,7 +149,7 @@ export function Contact() {
                   id="message"
                   rows={5}
                   placeholder="Sua mensagem..."
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-[#00ffff] focus:ring-2 focus:ring-[#00ffff]/20 transition-all duration-300 resize-none"
+                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-brand-cyan focus:ring-2 focus:ring-brand-cyan/20 transition-all duration-300 resize-none"
                 ></textarea>
               </div>
 
@@ -157,7 +157,7 @@ export function Contact() {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full px-8 py-4 bg-[#00ffff] text-[#0a0a0f] rounded-lg hover:shadow-[0_0_30px_rgba(0,255,255,0.5)] transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full px-8 py-4 bg-brand-cyan text-primary-foreground rounded-lg hover:shadow-[0_0_30px_color-mix(in_srgb,var(--brand-cyan)_50%,transparent)] transition-all duration-300 flex items-center justify-center gap-2"
                 style={{ fontWeight: 600 }}
               >
                 <Send className="w-5 h-5" />
