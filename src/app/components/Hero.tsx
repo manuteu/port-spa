@@ -1,9 +1,43 @@
 import { motion } from "motion/react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import portrait from "../../assets/portrait.webp";
 
 export function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <style>{`
+        @keyframes typewriter-name {
+          0% {
+            width: 0ch;
+          }
+
+          37.5%,
+          100% {
+            width: 17ch;
+          }
+        }
+
+        @keyframes typewriter-cursor {
+          0%,
+          45% {
+            opacity: 1;
+          }
+
+          46%,
+          100% {
+            opacity: 0;
+          }
+        }
+
+        .typewriter-name {
+          animation: typewriter-name 5.2s steps(17, end) 0.4s infinite both;
+        }
+
+        .typewriter-cursor {
+          animation: typewriter-cursor 0.8s step-end infinite;
+        }
+      `}</style>
+
       <div className="absolute inset-0 bg-gradient-to-br from-brand-cyan/5 via-transparent to-brand-magenta/5"></div>
 
       <div className="absolute inset-0">
@@ -42,8 +76,12 @@ export function Hero() {
             className="inline-block mb-6"
           >
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-brand-cyan to-brand-magenta p-1">
-              <div className="w-full h-full rounded-full bg-[#0a0a0f] flex items-center justify-center">
-                <span className="text-6xl">👨‍💻</span>
+              <div className="w-full h-full rounded-full bg-[#0a0a0f] overflow-hidden">
+                <img
+                  src={portrait}
+                  alt="Retrato de Matheus"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </motion.div>
@@ -52,12 +90,22 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="mb-4"
+            className="mb-4 flex flex-col items-center"
             style={{ fontSize: "4rem", fontWeight: 700 }}
           >
-            Desenvolvedor{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-magenta">
-              Front-End
+            <span className="inline-flex items-center font-mono">
+              <span className="typewriter-name inline-block overflow-hidden whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-magenta">
+                Matheus Rodrigues
+              </span>
+              <span className="typewriter-cursor ml-1 text-brand-cyan">
+                |
+              </span>
+            </span>
+            <span>
+              Desenvolvedor{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-magenta">
+                Web & Mobile
+              </span>
             </span>
           </motion.h1>
 

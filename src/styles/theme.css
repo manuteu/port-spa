@@ -2,8 +2,8 @@
 
 :root {
   --font-size: 16px;
-  --brand-cyan: #00ffff;
-  --brand-magenta: #ff00ff;
+  --brand-cyan: #38bdf8;
+  --brand-magenta: #2563eb;
   --background: #0a0a0f;
   --foreground: #e5e5e5;
   --card: #13131a;
@@ -20,7 +20,7 @@
   --accent-foreground: #0a0a0f;
   --destructive: #ff4466;
   --destructive-foreground: #ffffff;
-  --border: rgba(0, 255, 255, 0.1);
+  --border: rgba(56, 189, 248, 0.16);
   --input: transparent;
   --input-background: #1a1a24;
   --switch-background: #2a2a3a;
@@ -39,7 +39,7 @@
   --sidebar-primary-foreground: #0a0a0f;
   --sidebar-accent: #1a1a24;
   --sidebar-accent-foreground: #e5e5e5;
-  --sidebar-border: rgba(0, 255, 255, 0.1);
+  --sidebar-border: rgba(56, 189, 248, 0.16);
   --sidebar-ring: var(--brand-cyan);
 }
 
@@ -60,7 +60,7 @@
   --accent-foreground: #0a0a0f;
   --destructive: #ff4466;
   --destructive-foreground: #ffffff;
-  --border: rgba(0, 255, 255, 0.1);
+  --border: rgba(56, 189, 248, 0.16);
   --input: #1a1a24;
   --ring: var(--brand-cyan);
   --font-weight-medium: 500;
@@ -76,7 +76,7 @@
   --sidebar-primary-foreground: #0a0a0f;
   --sidebar-accent: #1a1a24;
   --sidebar-accent-foreground: #e5e5e5;
-  --sidebar-border: rgba(0, 255, 255, 0.1);
+  --sidebar-border: rgba(56, 189, 248, 0.16);
   --sidebar-ring: var(--brand-cyan);
 }
 
